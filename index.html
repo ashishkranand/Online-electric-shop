@@ -14,7 +14,7 @@
         <h1 class="heading">Your Online Electronic shop</h1>
         <nav>
             <li>
-                <a href="#">Home</a>
+                <a href="#"onclick="home()">Home</a>
                 <a href="#">About us</a>
                 <a href="#">Contact us</a>
             </li>
@@ -22,33 +22,201 @@
     </header>
     <main>
         <div class="leftNav">
-            <a href="#"><h2 class="navitem">Mobiles</h2></a>
-            <a href="#"><h2 class="navitem">Audio</h2></a>
-            <a href="#"><h2 class="navitem">Accessories</h2></a>
-           <a href="#"> <h2 class="navitem">Backpack</h2></a>
-            <a href="#"><h2 class="navitem">Covers</h2></a>
-            <a href="#"><h2 class="navitem">Services</h2></a>
+            <a href="#mobile"><h2 class="navitem"onclick="mobile()">Mobiles</h2></a>
+            <a href="#audio"><h2 class="navitem"onclick="audio()">Audio</h2></a>
+            <a href="#access"><h2 class="navitem"onclick="access()">Accessories</h2></a>
+            <a href="#backpack"> <h2 class="navitem"onclick="backpack()">Backpack</h2></a>
+            <a href="#covers"><h2 class="navitem"onclick="covers()">Covers</h2></a>
+            <a href="#services"><h2 class="navitem"onclick="services()">Services</h2></a>
         </div>
-        <div class="midcontent">
+        <div class="midcontent" id="mid">
             <div class="box1">
-                <button class="viewall">View all</button>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus debitis rerum obcaecati, voluptate nihil doloremque voluptatem, dolorum blanditiis a facilis ea, enim illo? Consequatur, fugit!
+                <button class="viewall">View more</button>
+                <ul class="slider">
+                    <li>
+                        <input type="radio" id="slide1" name="slide" checked>
+                        <label for="slide1"></label>
+                        <img src="./image/vivo.jpg" alt="Panel 1">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide2" name="slide">
+                        <label for="slide2"></label>
+                        <img src="./image/realme.jpg" alt="Panel 2">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide3" name="slide">
+                        <label for="slide3"></label>
+                        <img src="./image/oneplus.jpg" alt="Panel 3">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide4" name="slide">
+                        <label for="slide4"></label>
+                        <img src="./image/extra.jpg" alt="Panel 4">
+                    </li>
+                </ul>
             </div>
             <div class="box2">
-                <button class="viewall">View all</button>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa omnis soluta consectetur excepturi ducimus, tempora architecto eos. Officiis excepturi, praesentium numquam beatae ea fugiat!
+                
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <button class="viewall2">View Mobiles</button>
             </div>
         </div>
-        <div class="rightcontent">
+        <div class="rightcontent" id="right">
             <div class="box3">
-                <button class="viewall">View all</button>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem soluta neque reprehenderit ad atque, cupiditate quibusdam rerum doloremque doloribus vel debitis recusandae reiciendis velit.
+                
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <button class="viewall2">View Mobiles</button>
             </div>
             <div class="box4">
-                <button class="viewall">View all</button>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita enim ea eos quidem rem officiis adipisci, aliquam omnis totam nesciunt error non ratione assumenda quam.
+                
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/oppo.jpg" alt="Oppo">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <div class="mob">
+                    <img src="./image/samsung.jpg" alt="Samsung">
+                </div>
+                <button class="viewall2">View Mobiles</button>
             </div>
         </div>
+        <div class="contentslide">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <h2>Samsung is going to launch Phone which will be best phone of 2022</h2>
+                  <p class="author">- Samsung</p>
+                </div>
+                
+                <div class="mySlides">
+                  <h2>OPPO Reno 9Pro coming soon</h2>
+                  <p class="author">Source - Oppo</p>
+                </div>
+                
+                <div class="mySlides">
+                  <h2>In October 2022 Xiaomi is going to launch worlds slimmest mobile phone</h2>
+                  <p class="author">- Xiaomi</p>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+                
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+        </div>
     </main>
+    <div id="mobile" class="mobile">
+        <h1 class="headd"  style="color: white;">Mobiles</h1>
+    </div>
+    <div id="audio" class="audio">
+        <h1 class="headd"  style="color: white;">Audio</h1>
+    </div>
+    <div id="access" class="access">
+        <h1 class="headd"  style="color: white;">Accessories</h1>
+    </div>
+    <div id="backpack" class="backpack">
+        <h1 class="headd"  style="color: white;">Backpack</h1>
+    </div>
+    <div id="covers" class="covers">
+        <h1 class="headd"  style="color: white;">Covers</h1>
+    </div>
+    <div id="services" class="services">
+        <h1 class="headd"  style="color: white;">Services</h1>
+    </div>
 </body>
 </html>
